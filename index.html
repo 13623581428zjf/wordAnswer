@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<title></title>
+		<link rel="stylesheet" href="/static/animation.css" />
+		<link rel="stylesheet" href="/static/public.css" />
+		<script type="text/javascript" src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+		<script src="http://mat1.gtimg.com/sports/sportAppWeb/ffwc2018/kbs.custom.login.js"></script>
+		<script type="text/javascript" src="http://pingjs.qq.com/ping.js"></script>
+		<script type="text/javascript" src="http://mat1.gtimg.com/sports/sportAppWeb/ffwc2018/bossv2.js"></script>
+		<script src="static/html2canvas.js"></script>
+		<script type="text/javascript">
+			if(typeof(pgvMain) == 'function') {
+				pvCSTM = "sports";
+				pgvMain();
+			}
+		</script>
+		<script type="text/javascript">
+			var BossId = '6211';
+			var Pwd = '2121457830';
+
+			// -------------------------
+			// 业务上报
+			// -------------------------
+			if(typeof window.getBoss === 'function') {
+				var businessDataTemplate = {
+					pagename: '',
+					module: '',
+					target: '',
+					useraction: ''
+				}
+
+				var bizBoss = window.getBoss({
+					BossId: BossId,
+					Pwd: Pwd,
+					businessDataTemplate: businessDataTemplate
+				})
+
+				var businessData = {
+					pagename: 'game',
+					module: 'aside',
+					target: 'tab-guess',
+					useraction: 'click'
+				}
+				bizBoss.report(businessData)
+			}
+
+			// -------------------------
+			// 错误上报
+			// -------------------------
+			if(typeof window.getErrorMessageBoss === 'function') {
+				var errorMessageTemplate = {
+					pagename: '',
+					module: '',
+					code: '',
+					level: '',
+					message: ''
+				}
+
+				var errBoss = window.getBoss({
+					BossId: BossId,
+					Pwd: Pwd,
+					errorMessageTemplate: errorMessageTemplate
+				})
+
+				var errorMessage = {
+					pagename: 'game',
+					module: 'aside',
+					code: '2',
+					level: window.reportLevel.INFO,
+					message: '用户未登录'
+				}
+				errBoss.report(errorMessage)
+			}
+		</script>
+		<script charset="gbk" src="//pingjs.qq.com/ping_video.js"></script>
+		<script type="text/javascript">
+			if(typeof(pgvMain) == 'function') pgvMain();
+		</script>
+	</head>
+
+	<body>
+		<div id="app-box"></div>
+		<!-- built files will be auto injected -->
+	</body>
+
+</html>

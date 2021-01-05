@@ -1,0 +1,397 @@
+.indexBg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-image: url(../imgs/img-bg-f.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.userInfo {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    z-index: 10;
+}
+
+.lineMain {
+    width: 0;
+    height: 60px;
+    border-left: 2px solid #66656b;
+}
+
+.headImgWrap {
+    width: 348px;
+    height: 143px;
+    //      background-image: url(../img/headBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.headImg {
+    width: 118px;
+    height: 118px;
+    text-align: center;
+    border-radius: 50%;
+    img {
+        vertical-align: top;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+}
+
+.nickName {
+    font-size: 31px;
+    color: #e2c797;
+    margin: 12px 0;
+}
+
+.resultInfo {
+    width: 90%;
+    text-align: center;
+    font-size: 26px;
+    color: #ffffff;
+    line-height: 42px;
+    span {
+        color: #eb9494;
+    }
+}
+
+.lookErrorBtn {
+    width: 300px;
+    height: 50px;
+    border: 2px solid #e2c797;
+    border-radius: 90px;
+    margin-top: 10px;
+    font-size: 26px;
+    color: #e2c797;
+}
+
+.contentBox {
+    width: 90%;
+    position: absolute;
+    top: 422px;
+    left: 5%;
+}
+
+.top483 {
+    top: 38%;
+}
+
+.contentBoxInner {
+    position: relative;
+    padding-bottom: 30px;
+    border: 5px solid rgb(219, 182, 116);
+    border-radius: 10px;
+    background-color: rgba(0, 3, 17, .6);
+}
+
+.rankListBtn {
+    width: 90%;
+    margin: 0 auto;
+    height: 52px;
+    line-height: 52px;
+    text-align: right;
+    font-size: 0;
+    span {
+        display: inline-block;
+        height: 100%;
+        padding: 0 0 0 20px;
+        font-size: 30px;
+        color: #e2c797;
+    }
+}
+
+.user {
+    width: 88%;
+    margin: 20px auto 0;
+    background-color: rgba(192, 160, 102, .12);
+    padding: 20px 0 24px;
+    border-radius: 15px;
+}
+
+.names {
+    width: 88%;
+    margin: 20px auto;
+}
+
+.TeamName {
+    font-size: 30px;
+    color: #fff;
+}
+
+.progress-wrapper {
+    width: 88%;
+    margin: 0 auto;
+    transform: skewX(-30deg);
+    -webkit-transform: skewX(-30deg);
+    /*兼容-webkit-引擎浏览器*/
+    -moz-transform: skewX(-30deg);
+    /*兼容-moz-引擎浏览器*/
+}
+
+.progress {
+    width: 100%;
+    height: 18px;
+    background-color: #7d0022;
+    /*overflow: hidden;*/
+    cursor: pointer;
+    position: relative;
+    /*border-radius: 90px;*/
+}
+
+.progress.westRight {
+    background-color: #00479d;
+}
+
+.progress.eastRight {
+    background-color: #7d0022;
+}
+
+.left {
+    height: 100%;
+    width: 0;
+    background-color: rgba(0, 0, 0, .5);
+    position: relative;
+    transition: width 1s;
+    background: #00479d;
+    /*border-radius: 90px 0 0 90px;*/
+}
+
+.left.westRight {
+    background-color: #d70011;
+}
+
+.left.eastRight {
+    background-color: #097c25;
+}
+
+.ball {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: -11px;
+    right: -34px;
+    border-radius: 50%;
+    //      background-image: url(../img/ball.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    transform: skewX(30deg);
+    -webkit-transform: skewX(30deg);
+    /*兼容-webkit-引擎浏览器*/
+    -moz-transform: skewX(30deg);
+    /*兼容-moz-引擎浏览器*/
+}
+
+.ballValue {
+    width: 88%;
+    margin: 20px auto 0;
+}
+
+.valueBox {
+    width: 255px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.valueBox span {
+    width: 9px;
+    height: 19px;
+    position: absolute;
+    top: -5px;
+    //      background-image: url(../img/dian.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.valueBox span:nth-of-type(1) {
+    left: 38px;
+}
+
+.valueBox span:nth-of-type(2) {
+    right: 38px;
+}
+
+.ballNum {
+    height: 96px;
+    line-height: 96px;
+    text-align: center;
+    color: #ecd0a0;
+    font-size: 38px;
+    background-color: rgba(233, 206, 155, .17);
+}
+
+.guanNum {
+    height: 50px;
+    line-height: 50px;
+    color: #dedede;
+    font-size: 22px;
+    background-color: rgba(233, 206, 155, .39);
+    border-radius: 0 0 10px 10px;
+    strong {
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: normal;
+    }
+}
+
+.timesTitle {
+    font-size: 26px;
+    line-height: 38px;
+    color: #dbd9ca;
+}
+
+.timesNum {
+    margin-top: 16px;
+    font-size: 30px;
+    color: #dbd9ca;
+    span {
+        color: #e5c890;
+    }
+}
+
+.maxGun {
+    width: 154px;
+}
+
+.guanRankTitle {
+    font-size: 26px;
+    line-height: 38px;
+    color: #dbd9ca;
+}
+
+.guanRankNum {
+    font-size: 30px;
+    line-height: 38px;
+    color: #dbd9ca;
+    margin-top: 16px;
+}
+
+.answer {
+    margin-top: 50px;
+    padding: 0 45px;
+    div {
+        width: 252px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 32px;
+        text-align: center;
+        color: #333333;
+        background-color: #e2c797;
+        border-radius: 40px;
+    }
+    div.active {
+        background-color: #c3c3c3;
+    }
+    div.clickedBgc {
+        background-color: #d2b172;
+    }
+}
+
+.logo {
+    display: block;
+    width: 268px;
+    height: 44px;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    margin-left: -134px;
+}
+
+.team-item {
+    width: 353px;
+    height: 573px;
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
+.vip {
+    width: 24px;
+    height: 31px;
+    margin-left: 16px;
+    //      background-image: url(../img/vip.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+.bottom-logo {
+    width: 266px;
+    height: 44px;
+    position: fixed;
+    left: 50%;
+    bottom: 4%;
+    top: 92%;
+    margin-left: -120px;
+    background: url(../imgs/img-logo.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+
+/*按钮：点击参与*/
+
+.button-one {
+    width: 500px;
+    height: 80px;
+    position: fixed;
+    bottom: 24%;
+    left: 50%;
+    margin-left: -248px;
+    background: #E20000;
+    border-radius: 100px;
+}
+
+.button-two {
+    width: 500px;
+    height: 80px;
+    position: fixed;
+    bottom: 22.6%;
+    left: 50%;
+    background: #0095FF;
+    margin-left: -225px;
+    border-radius: 100px;
+}
+
+.button-three {
+    width: 500px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    position: fixed;
+    bottom: 23.3%;
+    left: 50%;
+    background: white;
+    margin-left: -235px;
+    border-radius: 100px;
+    font-size: 38px;
+    font-weight: 800;
+}
+
+
+/*保护主队不淘汰*/
+
+.none-weed {
+    width: 445px;
+    height: 86px;
+    position: fixed;
+    top: 80%;
+    bottom: 27%;
+    left: 50%;
+    text-align: center;
+    margin-left: -200px;
+    color: white;
+    opacity: .7;
+}
